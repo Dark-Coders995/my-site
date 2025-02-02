@@ -1,5 +1,16 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: 21f1006922@ds.study.iitm.ac.in
         run: echo "Hello, world!"
